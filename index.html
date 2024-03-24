@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd35ab57a3.js" crossorigin="anonymous"></script>
+    <title>Todo List</title>
+</head>
+
+<body>
+    <section class="container">
+        <!-- title of todo -->
+        <div class="todo">
+            <div class="title">
+                <h1>Todo List</h1>
+                <img src="icon.png" alt="">
+            </div>
+            <!-- user-input Area -->
+            <div class="input-area">
+                <!-- user-input field -->
+                <input type="text" id="task" name="task" class="user-input" placeholder="eg.ice-cream">
+                <!-- button for submit todo -->
+                <button class="add-btn">Add</button>
+            </div>
+            <!-- my taks -->
+            <div class="li-container">
+                <ul class="items">
+                    <!-- single item -->
+                    <li class="item">
+                        <span class="task-text">ice-cream</span>
+                        <div id="buttons">
+                            <i class="fa-regular fa-pen-to-square edit-btn"></i>
+                            <i class="fa-solid fa-trash delete-btn"></i>
+                        </div>
+                    </li>
+                    <!-- single item end -->
+
+                    <!-- single item -->
+                    <li class="item completeTask">
+                        <span class="task-text">Rice</span>
+                        <div id="buttons">
+                            <i class="fa-regular fa-pen-to-square edit-btn"></i>
+                            <i class="fa-solid fa-trash delete-btn"></i>
+                        </div>
+                    </li>
+                    <!-- end single item -->
+
+                    <!-- single item -->
+                    <li class="item">
+                        <span class="task-text">Pizza</span>
+                        <div id="buttons">
+                            <i class="fa-regular fa-pen-to-square edit-btn"></i>
+                            <i class="fa-solid fa-trash delete-btn"></i>
+                        </div>
+                    </li>
+                    <!-- single item end -->
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="app.js"></script>
+
+</html>

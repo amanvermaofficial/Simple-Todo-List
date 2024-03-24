@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(182, 177, 177, 0.563);
+    font-family: "Instrument Sans", sans-serif;
+}
+
+/* ************** Title ********************** */
+.title{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     gap: 10px;
+     margin: 10px;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(5, 5, 82);
+}
+img{
+    width: 2rem;
+}
+
+/* -------------input Area-----------------------*/
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 10px;
+}
+.container .input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    width: 75%;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(12, 3, 71);
+    font-size: 1.09rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 4.2rem;
+    border-radius: 5px;
+    background-color: rgb(4, 4, 52);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+/* ********** todo list Container *********** */
+
+.li-container{
+    margin: 10px 0;
+}
+.li-container ul{
+    width: 100%;
+    height: 100%;
+   
+    list-style: none;
+}
+.li-container ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(186, 190, 190, 0.591);
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    border-bottom:1px solid white;
+    transition: all 0.2s linear;
+}
+
+.li-container ul li:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(148, 154, 154, 0.576);
+}
+
+.li-container ul li.completeTask{
+    background-color: rgba(81, 84, 84, 0.591);
+    color: aliceblue;
+    text-decoration: line-through;
+}
+
+.close{
+    background-color: rgb(229, 0, 0);
+    color: aliceblue;
+    width: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+
+  .close:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  ul li.hide{
+    display: none;
+  }
+ .items .item #buttons{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding: 0.6rem;
+ }
